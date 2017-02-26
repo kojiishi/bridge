@@ -1,0 +1,14 @@
+[
+  {
+    name: "高田馬場 ザ・チャンス",
+    source: "http://www.fitsys.jp/Jrp1303/WebResult.aspx?CC=3EC010&TC=3EC01017021101",
+    Pair: 36,
+    data: ["20170211-1.html", "20170211-2.html"]
+  }
+  {
+    name: "五反田ＳＴＦ△２８００△２０００△１６００",
+    source: "http://www.fitsys.jp/Jrp1303/WebResult.aspx?CC=3EC009&TC=3EC00917022601",
+    Pair: 7,
+    data: ["20170226-1.html", "20170226-2.html"]
+  }
+]
