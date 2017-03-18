@@ -2,13 +2,19 @@
   {
     "name": "高田馬場 ザ・チャンス",
     "source": "http://www.fitsys.jp/Jrp1303/WebResult.aspx?CC=3EC010&TC=3EC01017021101",
-    "pair": 36,
-    "urls": ["20170211-1.html", "20170211-2.html"]
+    "users": { "36": [ 103242, 106326 ] },
+    "urls": [ "20170211-1.html", "20170211-2.html" ]
   },
   {
     "name": "五反田ＳＴＦ△２８００△２０００△１６００",
     "source": "http://www.fitsys.jp/Jrp1303/WebResult.aspx?CC=3EC009&TC=3EC00917022601",
-    "pair": 7,
+    "users": { "7": [ 103242, 106326 ] },
     "urls": [ "20170226-1.html", "20170226-2.html" ]
+  },
+  {
+    "name": "ムサシノHTペア",
+    "source": "http://www.fitsys.jp/JtosResultPage/WebResult.aspx?CC=3EC017&TC=3EC01717031802",
+    "users": { "4": [ 103242, 106326 ] },
+    "urls": [ "20170318-1.html", "20170318-2.html" ]
   }
 ]

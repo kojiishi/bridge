@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<body>
+  <h1>Bridge</h1>
+</body>
+<script>
+class Traveling {
+  static loadAll() {
+    return fetch('data/index.json').then(response => {
+      return response.json();
+    }).then(dataList => {
+      return Promise.all(dataList.map(data => new Traveling().load(data)));
+    });
+  }
+
+  load(data) {
+    this.data = data;
+    return Promise.all(data.urls.map(url => {
+      return fetch('data/' + url).then(response => {
+        return response.text();
+      }).then(text => {
+        this.text = text;
+        return this.parseSession(text);
+      });
+    })).then(sessions => {
+      this.sessions = sessions;
+      return this;
+    });
+  }
+
+  parseSession(text) {
+    let lines = text.split('\n');
+    let linenum = 0;
+    let name = null;
+    let session = 0;
+    let board = 0;
+    let scores = [];
+    let boards = [];
+    for (let line of lines) {
+      linenum++;
+      if (!session) {
+        let sessionMatch = line.match(/^Session (\d+)/);
+        if (sessionMatch) {
+          session = sessionMatch[1];
+          if (linenum >= 2)
+            name = lines[linenum - 2];
+        }
+        continue;
+      }
+      let boardMatch = line.match(/^Board \((\d+)\)/);
+      if (boardMatch) {
+        if (board) {
+          boards.push({ board: board, scores: scores });
+          scores = [];
+        }
+        board = boardMatch[1];
+        continue;
+      }
+      let scoreMatch = line.match(/^ ([ \d]{3}) ([ \d]{3}) (\d\w{1,2}) +(\w) ?([-\d]+) ([ \d]{4}) ([ \d]{4}) ([ \d\.]{6})/);
+      if (scoreMatch) {
+        scores.push({
+          nsid: scoreMatch[1],
+          ewid: scoreMatch[2],
+          contract: scoreMatch[3],
+          by: scoreMatch[4],
+          make: parseInt(scoreMatch[5]),
+          nsscore: scoreMatch[6].trim() ? parseInt(scoreMatch[6]) : 0,
+          ewscore: scoreMatch[7].trim() ? parseInt(scoreMatch[7]) : 0,
+          mp: parseFloat(scoreMatch[8])
+        });
+      }
+    }
+    if (board) {
+      boards.push({ board: board, scores: scores });
+    }
+    return {
+      session: session,
+      boards: boards
+    };
+  }
+}
+
+(function () {
+  Traveling.loadAll().then(travelings => {
+    console.log(travelings);
+  });
+})();
+</script>
