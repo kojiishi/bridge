@@ -16,5 +16,11 @@
     "source": "http://www.fitsys.jp/JtosResultPage/WebResult.aspx?CC=3EC017&TC=3EC01717031802",
     "users": { "4": [ 103242, 106326 ] },
     "urls": [ "20170318-1.html", "20170318-2.html" ]
+  },
+  {
+    "name": "五反田△１４００ペア",
+    "source": "http://www.fitsys.jp/Jrp1303/WebResult.aspx?CC=3EC009&TC=3EC00917040901",
+    "users": { "1": [ 106326, 103242 ] },
+    "urls": [ "20170409-1.html", "20170409-2.html" ]
   }
 ]
