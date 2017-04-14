@@ -1,33 +1,26 @@
-<!DOCTYPE html>
-<body>
-  <h1>Bridge</h1>
-</body>
-<script>
+const fs = require('fs');
+
 class Traveling {
   static loadAll() {
-    return fetch('data/index.json').then(response => {
-      return response.json();
-    }).then(dataList => {
-      return Promise.all(dataList.map(data => new Traveling().load(data)));
-    });
+    const index = Traveling.loadIndex();
+    return index.map(data =>
+      new Traveling().load(data));
+  }
+
+  static loadIndex() {
+    return require('./data/index.json');
   }
 
   load(data) {
     this.data = data;
-    return Promise.all(data.urls.map(url => {
-      return fetch('data/' + url).then(response => {
-        return response.text();
-      }).then(text => {
-        this.text = text;
-        return this.parseSession(text);
-      });
-    })).then(sessions => {
-      this.sessions = sessions;
-      return this;
+    this.sessions = data.urls.map(url => {
+      let text = fs.readFileSync('data/' + url);
+      return this.parse(text.toString());
     });
+    return this;
   }
 
-  parseSession(text) {
+  parse(text) {
     let lines = text.split('\n');
     let linenum = 0;
     let name = null;
@@ -80,8 +73,7 @@ class Traveling {
 }
 
 (function () {
-  Traveling.loadAll().then(travelings => {
-    console.log(travelings);
-  });
+  let travelings = Traveling.loadAll();
+  fs.writeFileSync('data/combined.json',
+                   JSON.stringify(travelings, null, 1));
 })();
-</script>
