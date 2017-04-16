@@ -1,3 +1,4 @@
+const assert = require('assert');
 const fs = require('fs');
 
 class Traveling {
@@ -13,62 +14,68 @@ class Traveling {
 
   load(data) {
     this.data = data;
-    this.sessions = data.urls.map(url => {
+    this.sessions = [];
+    for (let url of data.urls) {
       let text = fs.readFileSync('data/' + url);
-      return this.parse(text.toString());
-    });
+      this.parse(text.toString());
+    }
     return this;
   }
 
   parse(text) {
     let lines = text.split('\n');
     let linenum = 0;
-    let name = null;
-    let session = 0;
-    let board = 0;
-    let scores = [];
-    let boards = [];
+    let session, board, scores, boards;
     for (let line of lines) {
       linenum++;
-      if (!session) {
-        let sessionMatch = line.match(/^Session (\d+)/);
-        if (sessionMatch) {
-          session = sessionMatch[1];
-          if (linenum >= 2)
-            name = lines[linenum - 2];
+      let match = line.match(/^Session (\d+)/);
+      if (match) {
+        assert(!session);
+        session = { session: parseInt(match[1]) };
+        if (linenum >= 2) {
+          let name = lines[linenum - 2];
+          name = name.replace(/\s*<[^>]*>\s*/g, '');
+          console.log(name);
+          session.name = name;
         }
+        session.boards = boards = [];
         continue;
       }
-      let boardMatch = line.match(/^Board \((\d+)\)/);
-      if (boardMatch) {
-        if (board) {
-          boards.push({ board: board, scores: scores });
-          scores = [];
-        }
-        board = boardMatch[1];
+      if (!session)
+        continue;
+
+      match = line.match(/^Board \((\d+)\)/);
+      if (match) {
+        if (board)
+          boards.push(board);
+        scores = [];
+        board = {
+          board: parseInt(match[1]),
+          scores: scores
+        };
         continue;
       }
-      let scoreMatch = line.match(/^ ([ \d]{3}) ([ \d]{3}) (\d\w{1,2}) +(\w) ?([-\d]+) ([ \d]{4}) ([ \d]{4}) ([ \d\.]{6})/);
-      if (scoreMatch) {
+      if (!scores)
+        continue;
+
+      match = line.match(/^ ([ \d]{3}) ([ \d]{3}) (\d\w{1,2}) +(\w) ?([-\d]+) ([ \d]{4}) ([ \d]{4}) ([ \d\.]{6})/);
+      if (match) {
         scores.push({
-          nsid: scoreMatch[1],
-          ewid: scoreMatch[2],
-          contract: scoreMatch[3],
-          by: scoreMatch[4],
-          make: parseInt(scoreMatch[5]),
-          nsscore: scoreMatch[6].trim() ? parseInt(scoreMatch[6]) : 0,
-          ewscore: scoreMatch[7].trim() ? parseInt(scoreMatch[7]) : 0,
-          mp: parseFloat(scoreMatch[8])
+          ns: parseInt(match[1]),
+          ew: parseInt(match[2]),
+          contract: match[3],
+          by: match[4],
+          make: parseInt(match[5]),
+          nsscore: match[6].trim() ? parseInt(match[6]) : 0,
+          ewscore: match[7].trim() ? parseInt(match[7]) : 0,
+          mp: parseFloat(match[8])
         });
       }
     }
-    if (board) {
-      boards.push({ board: board, scores: scores });
-    }
-    return {
-      session: session,
-      boards: boards
-    };
+    if (board)
+      boards.push(board);
+    if (session)
+      this.sessions.push(session);
   }
 }
 
