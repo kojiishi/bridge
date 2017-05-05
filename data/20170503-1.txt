@@ -1,0 +1,758 @@
+2017/05/03 â°ïlBCäJäŸãLîO(Open/Å¢1500/Å¢750STF) 1st Session
+--------------------------------
+Bd.1         S:1092
+Dealer:N     H:Q10975
+Vul:None     D:
+             C:Q10632
+    S:KJ4    *NN* S:A8653
+    H:KJ64   W  E H:82
+    D:J10982 W  E D:A764
+    C:7      *SS* C:54
+             S:Q7
+             H:A3
+             D:KQ53
+             C:AKJ98
+Contract by md Score  MP  tie
+5SX      E  -3   500   48   1
+3NT      S   3   400   46   1
+5C       S   5   400   46   2
+4C       S   5   150   44   1
+3C       S   4   130   33   7
+4C       S   4   130   33   8
+1C       S   4   130   33   5
+3C       S   3   110   23   1
+3S       E  -2   100   21   1
+3SX      E  -1   100   21   1
+3S       E  -1    50   18   3
+4S       E  -1    50   18   1
+5C       S  -1   -50   12   2
+3NT      S  -1   -50   12   1
+4C       S  -1   -50   12   4
+3H       N  -1   -50   12   2
+3H       S  -2  -100    5   1
+5C       S  -2  -100    5   4
+2S       E   3  -140    2   1
+6C       S  -3  -150    0   1
+4H       N  -3  -150    0   1
+--------------------------------
+Bd.2         S:Q1095
+Dealer:E     H:AKQ2
+Vul:N-S      D:Q2
+             C:Q54
+       S:632 *NN* S:K74
+       H:964 W  E H:873
+       D:104 W  E D:AJ8763
+       C:AKJ96*SS*C:2
+             S:AJ8
+             H:J105
+             D:K95
+             C:10873
+Contract by md Score  MP  tie
+3DX      E  -4   800   48   1
+3NT      S   5   660   46   2
+3NT      S   4   630   41   4
+3NT      N   4   630   41   5
+3NT      N   3   600   34   2
+3NT      S   3   600   34   3
+2NT      S   4   180   23   1
+1NT      N   4   180   23   1
+2NT      N   4   180   23  15
+3D       E  -3   150   11   1
+2NT      N   3   150   11   5
+2NT      S   3   150   11   1
+1NT      S   2   120    6   1
+2NT      N   2   120    6   1
+3C       S   3   110    5   1
+2DX      E  -1   100    4   1
+2S       S  -1  -100    3   1
+3C       N  -2  -200    2   1
+3C       N  -3  -300    0   1
+3NT      S  -3  -300    0   1
+--------------------------------
+Bd.3         S:AJ5
+Dealer:S     H:832
+Vul:E-W      D:K96
+             C:Q652
+      S:K63  *NN* S:109
+      H:74   W  E H:J1096
+      D:1032 W  E D:QJ85
+      C:K10973*SS*C:A84
+             S:Q8742
+             H:AKQ5
+             D:A74
+             C:J
+Contract by md Score  MP  tie
+3NT      S   6   490   48   1
+4S       S   5   450   45   4
+4S       S   4   420   30  27
+3NT      N   3   400   16   1
+3S       S   4   170   14   1
+2S       S   4   170   14   2
+2S       S   3   140   11   2
+4S       N  -1   -50    5   1
+4S       S  -1   -50    5   9
+6S       S  -2  -100    0   1
+--------------------------------
+Bd.4         S:AJ85
+Dealer:W     H:K107
+Vul:Both     D:A109
+             C:763
+     S:Q1074 *NN* S:962
+     H:AJ932 W  E H:Q6
+     D:J6    W  E D:87432
+     C:K5    *SS* C:A92
+             S:K3
+             H:854
+             D:KQ5
+             C:QJ1084
+Contract by md Score  MP  tie
+3NT      N   4   630   48   1
+3NT      N   3   600   44   6
+2S       E  -3   300   40   1
+3S       E  -3   300   40   1
+2H       W  -2   200   38   2
+2H       E  -2   200   38   1
+2NT      N   4   180   36   1
+2NT      N   3   150   33   4
+3C       S   4   130   30   1
+2C       S   4   130   30   1
+2NT      N   2   120   29   1
+3C       N   3   110   26   4
+2H       W  -1   100   22   1
+1NT      E  -1   100   22   2
+2H       E  -1   100   22   1
+1S       N   1    80   20   1
+pass out     0     0   19   1
+1H       W   1   -80   18   1
+3C       N  -1  -100   13   1
+3NT      N  -1  -100   13   1
+3D       N  -1  -100   13   1
+2NT      N  -1  -100   13   5
+5C       N  -1  -100   13   1
+2S       N  -2  -200    4   3
+3NT      N  -2  -200    4   6
+--------------------------------
+Bd.5         S:K64
+Dealer:N     H:J98
+Vul:N-S      D:J83
+             C:AJ87
+    S:10     *NN* S:AQJ952
+    H:KQ1064 W  E H:2
+    D:72     W  E D:KQ10965
+    C:Q10532 *SS* C:
+             S:873
+             H:A753
+             D:A4
+             C:K964
+Contract by md Score  MP  tie
+4H       E  -3   150   47   1
+4H       W  -3   150   47   1
+4S       E  -2   100   45   1
+3S       E  -2   100   45   1
+6D       W  -2   100   45   1
+5D       E  -1    50   38   2
+4S       E  -1    50   38   7
+4D       E  -1    50   38   1
+3D       E   3  -110   32   2
+2H       E   2  -110   32   1
+4D       E   4  -130   26   2
+3D       E   4  -130   26   6
+2D       E   4  -130   26   1
+2S       E   3  -140   20   1
+3S       W   3  -140   20   1
+3S       E   3  -140   20   1
+4D       E   5  -150   16   1
+3D       E   5  -150   16   3
+3S       E   4  -170   11   2
+2S       E   4  -170   11   4
+2S       E   5  -200    8   1
+4S       E   4  -420    3   8
+--------------------------------
+Bd.6         S:Q1094
+Dealer:E     H:A875
+Vul:E-W      D:73
+             C:984
+     S:K652  *NN* S:A3
+     H:J1092 W  E H:Q64
+     D:A2    W  E D:KJ9864
+     C:AJ6   *SS* C:105
+             S:J87
+             H:K3
+             D:Q105
+             C:KQ732
+Contract by md Score  MP  tie
+3NT      W  -4   400   48   1
+2C       W  -2   200   47   1
+3D       E  -1   100   44   1
+3NT      W  -1   100   44   4
+2D       E   3  -110   36   5
+3D       E   3  -110   36   5
+1NT      W   2  -120   27   4
+1NT      E   2  -120   27   1
+2NT      W   2  -120   27   3
+3D       E   4  -130   21   2
+2D       E   4  -130   21   2
+2NT      W   3  -150   16   1
+1NT      W   3  -150   16   2
+1NT      E   3  -150   16   4
+3H       W   4  -170   12   1
+1NT      W   4  -180   10   3
+3NT      W   3  -600    5   7
+3NT      W   4  -630    0   1
+3NT      E   4  -630    0   1
+--------------------------------
+Bd.7         S:KJ852
+Dealer:S     H:83
+Vul:Both     D:A8
+             C:10942
+    S:643    *NN* S:Q107
+    H:A10652 W  E H:QJ
+    D:73     W  E D:J942
+    C:KQJ    *SS* C:A865
+             S:A9
+             H:K974
+             D:KQ1065
+             C:73
+Contract by md Score  MP  tie
+2S       W  -3   300   48   1
+1NT      S   3   150   47   1
+1NT      S   2   120   45   2
+2S       N   2   110   41   6
+1NT      E  -1   100   38   1
+2D       S   2    90   34   2
+1NT      S   1    90   34   4
+pass out     0     0   30   2
+1NT      E   1   -90   29   1
+3D       S  -1  -100   24   1
+2D       S  -1  -100   24   2
+2S       N  -1  -100   24   3
+1NT      S  -1  -100   24   3
+2H       W   2  -110   19   1
+1NT      E   2  -120   12  13
+3D       S  -2  -200    3   1
+2S       N  -2  -200    3   1
+1NT      S  -2  -200    3   3
+3D       S  -3  -300    0   1
+--------------------------------
+Bd.8         S:74
+Dealer:W     H:K1054
+Vul:None     D:J107
+             C:10983
+     S:652   *NN* S:K10983
+     H:AQJ87 W  E H:9
+     D:98    W  E D:AKQ32
+     C:AKQ   *SS* C:J6
+             S:AQJ
+             H:632
+             D:654
+             C:7542
+Contract by md Score  MP  tie
+6SX      E  -2   300   48   1
+5S       W  -2   100   46   1
+3NT      E  -2   100   46   1
+3NT      W  -1    50   43   3
+5S       E  -1    50   43   1
+5S       W  -1    50   43   1
+3NT      E   3  -400   39   3
+4S       E   4  -420   21  24
+4S       W   4  -420   21   8
+3NT      E   4  -430    3   3
+3NT      W   4  -430    3   2
+3NT      W   6  -490    0   1
+--------------------------------
+Bd.9         S:86
+Dealer:N     H:K764
+Vul:E-W      D:A82
+             C:J953
+      S:K102 *NN* S:A7543
+      H:AJ   W  E H:1083
+      D:K63  W  E D:Q74
+      C:107642*SS*C:A8
+             S:QJ9
+             H:Q952
+             D:J1095
+             C:KQ
+Contract by md Score  MP  tie
+3S       E  -1   100   44   5
+4S       E  -1   100   44   1
+2S       E  -1   100   44   2
+1NT      S   1    90   40   1
+pass out     0     0   30  19
+3H       N  -1   -50   18   3
+1H       N  -1   -50   18   1
+2H       N  -1   -50   18   1
+2H       N  -2  -100   13   1
+3H       N  -2  -100   13   4
+2S       E   2  -110    8   4
+1S       E   2  -110    8   1
+2S       E   3  -140    3   3
+3S       E   3  -140    3   2
+1NT      W   3  -150    0   1
+--------------------------------
+Bd.10        S:A642
+Dealer:E     H:K9
+Vul:Both     D:A54
+             C:J1085
+     S:KQJ   *NN* S:873
+     H:A7654 W  E H:82
+     D:6     W  E D:KJ10982
+     C:AQ43  *SS* C:K6
+             S:1095
+             H:QJ103
+             D:Q73
+             C:972
+Contract by md Score  MP  tie
+3NT      W  -3   300   47   2
+3NT      E  -3   300   47   1
+2NT      E  -2   200   42   1
+3NT      W  -2   200   42   4
+2NT      W  -2   200   42   2
+3NT      W  -1   100   33   1
+3NT      E  -1   100   33   1
+2H       E  -1   100   33   1
+2NT      W  -1   100   33   2
+2H       W  -1   100   33   2
+2NT      E  -1   100   33   4
+1NT      E   1   -90   26   1
+2D       E   2   -90   26   1
+2S       N  -1  -100   24   1
+2NT      S  -1  -100   24   1
+2H       W   2  -110   19   6
+2D       E   3  -110   19   2
+2NT      W   2  -120   15   1
+2D       E   4  -130   10   2
+3D       W   4  -130   10   1
+3D       E   4  -130   10   5
+3H       W   3  -140    5   1
+2H       W   3  -140    5   1
+3D       E   5  -150    4   1
+2S       S  -2  -200    2   2
+2S       S  -4  -400    1   1
+3CX      N  -6 -1700    0   1
+--------------------------------
+Bd.11        S:43
+Dealer:S     H:KJ842
+Vul:None     D:AQ7
+             C:A74
+      S:K98  *NN* S:AJ107
+      H:A107 W  E H:63
+      D:J65  W  E D:9832
+      C:K1083*SS* C:962
+             S:Q652
+             H:Q95
+             D:K104
+             C:QJ5
+Contract by md Score  MP  tie
+4H       N   4   420   46   4
+3NT      N   3   400   44   1
+2H       N   4   170   40   6
+3S       E  -3   150   36   1
+1NT      S   3   150   36   1
+1NT      N   3   150   36   1
+2H       N   3   140   27   9
+3H       N   3   140   27   6
+1NT      S  -1   -50    9   1
+4H       N  -1   -50    9  19
+--------------------------------
+Bd.12        S:KJ94
+Dealer:W     H:QJ72
+Vul:N-S      D:J7
+             C:1075
+     S:106   *NN* S:A8753
+     H:AK10  W  E H:83
+     D:AK643 W  E D:9
+     C:Q93   *SS* C:K8642
+             S:Q2
+             H:9654
+             D:Q10852
+             C:AJ
+Contract by md Score  MP  tie
+5NT      W  -2   100   48   1
+2S       W  -1    50   46   2
+3NT      W  -1    50   46   1
+2S       E   2  -110   38   1
+2S       W   2  -110   38  11
+2NT      W   2  -120   32   1
+2S       W   3  -140   24  14
+1NT      W   3  -150   16   1
+2NT      W   3  -150   16   2
+2S       W   4  -170   14   1
+3NT      W   3  -400    8  10
+3NT      W   4  -430    2   3
+3NT      W   5  -460    0   1
+--------------------------------
+Bd.13        S:A96
+Dealer:N     H:10852
+Vul:Both     D:96
+             C:A1052
+    S:K1053  *NN* S:QJ872
+    H:KJ     W  E H:963
+    D:J10542 W  E D:AKQ
+    C:63     *SS* C:Q7
+             S:4
+             H:AQ74
+             D:873
+             C:KJ984
+Contract by md Score  MP  tie
+4S       E  -2   200   48   1
+3H       N   4   170   47   1
+3C       S   3   110   46   1
+3S       E  -1   100   40   1
+4S       E  -1   100   40   9
+2S       E   2  -110   33   3
+3D       E   3  -110   33   1
+2S       E   3  -140   22   6
+3S       E   3  -140   22  13
+2S       E   4  -170    7   3
+3S       E   4  -170    7   8
+4S       E   4  -620    1   1
+3SX      E   4  -930    0   1
+--------------------------------
+Bd.14        S:65
+Dealer:E     H:AQ1043
+Vul:None     D:A109
+             C:KJ6
+      S:K8   *NN* S:AJ102
+      H:76   W  E H:85
+      D:K752 W  E D:QJ64
+      C:A8753*SS* C:942
+             S:Q9743
+             H:KJ92
+             D:83
+             C:Q10
+Contract by md Score  MP  tie
+2HX      N   4   670   48   1
+4H       N   4   420   45   4
+3H       N   4   170   35   8
+2H       N   4   170   35   9
+4C       W  -3   150   26   1
+2H       N   3   140   16  13
+3H       N   3   140   16   6
+3D       W  -1    50    6   1
+4H       N  -1   -50    3   5
+3C       S  -4  -200    0   1
+--------------------------------
+Bd.15        S:K875
+Dealer:S     H:AJ7
+Vul:N-S      D:AK864
+             C:10
+     S:Q2    *NN* S:643
+     H:10865 W  E H:Q94
+     D:Q5    W  E D:J932
+     C:KQ984 *SS* C:A73
+             S:AJ109
+             H:K32
+             D:107
+             C:J652
+Contract by md Score  MP  tie
+4S       S   6   680   48   1
+4S       S   5   650   42  10
+4S       S   4   620   27  20
+3S       S   5   200   17   1
+3S       S   4   170   15   3
+2S       S   3   140   13   1
+3D       N   3   110   12   1
+1NT      S   1    90   11   1
+4S       N  -1  -100    5   1
+4S       S  -1  -100    5   9
+3S       S  -1  -100    5   1
+--------------------------------
+Bd.16        S:10642
+Dealer:W     H:K1076
+Vul:E-W      D:A
+             C:Q1063
+      S:98   *NN* S:AK
+      H:A984 W  E H:QJ
+      D:J42  W  E D:KQ963
+      C:AK98 *SS* C:J754
+             S:QJ753
+             H:532
+             D:10875
+             C:2
+Contract by md Score  MP  tie
+6D       E  -4   400   48   1
+3NT      E  -3   300   46   2
+4NT      W  -3   300   46   1
+3NT      E  -2   200   36  10
+6NT      W  -2   200   36   1
+3NT      W  -2   200   36   6
+3NT      W  -1   100   20   3
+3NT      E  -1   100   20  11
+3NT      W   3  -600   10   4
+3NT      E   3  -600   10   3
+3NT      E   4  -630    3   2
+3NT      W   4  -630    3   5
+--------------------------------
+Bd.17        S:10976
+Dealer:N     H:KJ96
+Vul:None     D:105
+             C:964
+    S:3      *NN* S:AK2
+    H:A10875 W  E H:42
+    D:A762   W  E D:KQ943
+    C:J85    *SS* C:AKQ
+             S:QJ854
+             H:Q3
+             D:J8
+             C:10732
+Contract by md Score  MP  tie
+4H       E   4  -420   48   1
+4NT      E   5  -460   25   2
+5NT      E   5  -460   25   1
+3NT      E   5  -460   25  41
+6D       E   6  -920    1   1
+6D       W   6  -920    1   3
+--------------------------------
+Bd.18        S:107543
+Dealer:E     H:AQ43
+Vul:N-S      D:106
+             C:43
+     S:Q98   *NN* S:AK62
+     H:J1072 W  E H:9
+     D:9     W  E D:Q8532
+     C:A10765*SS* C:J82
+             S:J
+             H:K865
+             D:AKJ74
+             C:KQ9
+Contract by md Score  MP  tie
+4H       S   4   620   42  12
+1NT      S   3   150   35   1
+2NT      N   3   150   35   1
+2H       S   3   140   33   1
+3H       N   3   140   33   1
+2NT      S   2   120   31   3
+3D       S   3   110   29   1
+2S       E  -1    50   28   1
+2NT      S  -1  -100   17   1
+1NT      S  -1  -100   17   1
+3NT      S  -1  -100   17   1
+3H       N  -1  -100   17   1
+4H       N  -1  -100   17   5
+4H       S  -1  -100   17  11
+5H       S  -2  -200    4   1
+4H       S  -2  -200    4   5
+3NT      S  -3  -300    0   1
+4H       S  -3  -300    0   1
+--------------------------------
+Bd.19        S:K1052
+Dealer:S     H:4
+Vul:E-W      D:Q4
+             C:QJ10963
+     S:Q     *NN* S:94
+     H:A9753 W  E H:J106
+     D:K72   W  E D:A9865
+     C:AK87  *SS* C:542
+             S:AJ8763
+             H:KQ82
+             D:J103
+             C:
+Contract by md Score  MP  tie
+5HX      W  -4  1100   48   1
+4SX      S   5   690   47   1
+4S       S   5   450   45   3
+4S       S   4   420   31  24
+4S       N   4   420   31   1
+3H       W  -2   200   18   1
+3S       S   4   170   16   3
+3S       S   3   140   12   5
+pass out     0     0    9   1
+4S       S  -1   -50    5   6
+4SX      S  -1  -100    1   1
+4S       S  -2  -100    1   1
+2H       W   2  -110    0   1
+--------------------------------
+Bd.20        S:K98
+Dealer:W     H:AQ10942
+Vul:Both     D:KJ
+             C:K5
+  S:AJ107653 *NN* S:2
+  H:6        W  E H:KJ7
+  D:A1084    W  E D:962
+  C:J        *SS* C:986432
+             S:Q4
+             H:853
+             D:Q753
+             C:AQ107
+Contract by md Score  MP  tie
+4SX      W  -3   800   46   4
+4H       N   4   620   42   4
+3NT      N   3   600   39   2
+3SX      W  -2   500   38   1
+4S       W  -2   200   37   1
+4S       W  -1   100   35   2
+4H       N  -1  -100   27  14
+3H       N  -2  -200   12   1
+5H       N  -2  -200   12   2
+4HX      N  -1  -200   12   1
+4H       N  -2  -200   12  13
+4H       N  -3  -300    2   3
+5HX      N  -2  -500    0   1
+--------------------------------
+Bd.21        S:A73
+Dealer:N     H:Q4
+Vul:N-S      D:QJ62
+             C:AKJ2
+   S:J9865   *NN* S:KQ
+   H:K108532 W  E H:AJ96
+   D:108     W  E D:K93
+   C:        *SS* C:Q1073
+             S:1042
+             H:7
+             D:A754
+             C:98654
+Contract by md Score  MP  tie
+1NTX     N   1   180   47   2
+1NT      N   2   120   45   2
+1NT      N   1    90   44   1
+3C       N  -1  -100   41   1
+1NT      N  -1  -100   41   3
+3H       W   3  -140   39   1
+3H       E   4  -170   34   4
+3H       W   4  -170   34   1
+2H       E   4  -170   34   4
+2H       W   5  -200   24   1
+3C       N  -2  -200   24   2
+3H       E   5  -200   24   3
+1NT      N  -2  -200   24   5
+1NT      N  -3  -300   18   1
+4H       E   4  -420   12   4
+4H       W   4  -420   12   6
+4H       E   5  -450    4   6
+4H       W   6  -480    0   2
+--------------------------------
+Bd.22        S:J1054
+Dealer:E     H:9
+Vul:E-W      D:108654
+             C:1098
+      S:986  *NN* S:AQ72
+      H:J754 W  E H:KQ63
+      D:KQ2  W  E D:A9
+      C:QJ6  *SS* C:A32
+             S:K3
+             H:A1082
+             D:J73
+             C:K754
+Contract by md Score  MP  tie
+4H       W  -2   200   42  12
+4H       E  -2   200   42   1
+4H       E  -1   100   22   4
+3NT      W  -1   100   22   1
+3NT      E  -1   100   22   1
+4H       W  -1   100   22  20
+5H       W  -1   100   22   1
+3NT      E   3  -600    8   1
+4H       W   4  -620    4   7
+3NT      E   5  -660    0   1
+--------------------------------
+Bd.23        S:KQJ102
+Dealer:S     H:J108
+Vul:Both     D:KJ5
+             C:KJ
+      S:8543 *NN* S:97
+      H:Q42  W  E H:A5
+      D:Q72  W  E D:10963
+      C:753  *SS* C:AQ986
+             S:A6
+             H:K9763
+             D:A84
+             C:1042
+Contract by md Score  MP  tie
+3NT      S   5   660   47   2
+4H       S   5   650   45   1
+4H       N   5   650   45   2
+4H       N   4   620   40   2
+4H       S   4   620   40   4
+3NT      S   3   600   35   1
+3NT      N   3   600   35   3
+2NT      N   4   180   33   1
+3H       N   3   140   30   1
+3H       S   3   140   30   3
+2H       S   3   140   30   1
+2NT      N   2   120   27   1
+4H       N  -1  -100   14   2
+3NT      S  -1  -100   14   1
+3H       S  -1  -100   14   1
+4S       S  -1  -100   14   1
+4S       N  -1  -100   14   2
+4H       S  -1  -100   14  18
+4H       S  -2  -200    0   1
+3D       N  -2  -200    0   1
+--------------------------------
+Bd.24        S:KQJ95
+Dealer:W     H:AQJ86
+Vul:None     D:8
+             C:A4
+    S:72     *NN* S:A1084
+    H:102    W  E H:975
+    D:A75432 W  E D:6
+    C:J83    *SS* C:KQ652
+             S:63
+             H:K43
+             D:KQJ109
+             C:1097
+Contract by md Score  MP  tie
+2DX      W  -3   500   48   1
+4H       S   5   450   45   3
+4H       N   5   450   45   1
+3NT      S   4   430   41   4
+4S       N   4   420   25   3
+4H       N   4   420   25  25
+3NT      S   3   400   10   2
+2H       N   4   170    9   1
+3S       N   3   140    8   1
+4S       N  -1   -50    4   3
+3D       N  -1   -50    4   1
+4H       N  -1   -50    4   2
+5H       N  -2  -100    0   1
+4S       N  -2  -100    0   1
+--------------------------------
+Bd.25        S:98642
+Dealer:N     H:K102
+Vul:E-W      D:8
+             C:J972
+      S:Q107 *NN* S:AKJ5
+      H:J743 W  E H:95
+      D:KQ7  W  E D:J652
+      C:K65  *SS* C:AQ8
+             S:3
+             H:AQ86
+             D:A10943
+             C:1043
+Contract by md Score  MP  tie
+3NT      E  -1   100   47   2
+2NT      W   3  -150   46   1
+3NT      W   3  -600   31   2
+3NT      E   3  -600   31  26
+3NT      E   4  -630    8  18
+--------------------------------
+Bd.26        S:AQJ93
+Dealer:E     H:A8
+Vul:Both     D:KJ
+             C:AK53
+     S:872   *NN* S:K1054
+     H:J9743 W  E H:Q652
+     D:10982 W  E D:7
+     C:J     *SS* C:10964
+             S:6
+             H:K10
+             D:AQ6543
+             C:Q872
+Contract by md Score  MP  tie
+7NT      N   7  2220   48   1
+7D       S   7  2140   47   1
+6NT      S   7  1470   40   4
+6NT      N   7  1470   40   8
+6NT      S   6  1440   26   7
+6NT      N   6  1440   26   9
+6D       S   7  1390   17   3
+6C       N   6  1370   15   1
+3NT      N   7   720   13   2
+3NT      S   7   720   13   1
+3NT      N   6   690    8   2
+3NT      S   6   690    8   4
+3NT      S   5   660    4   2
+7NT      S  -1  -100    1   1
+7C       N  -1  -100    1   1
+6S       N  -1  -100    1   1
+6NT      N  -1  -100    1   1

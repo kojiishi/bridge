@@ -22,5 +22,10 @@
     "source": "http://www.fitsys.jp/Jrp1303/WebResult.aspx?CC=3EC009&TC=3EC00917040901",
     "users": { "1": [ 106326, 103242 ] },
     "urls": [ "20170409-1.html", "20170409-2.html" ]
+  },
+  {
+    "name": "横浜BC開館記念(Open/△1500/△750STF)",
+    "users": { "32": [ 106326, 103242 ] },
+    "urls": [ "20170503-1.html", "20170503-2.html" ]
   }
 ]
