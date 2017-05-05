@@ -1,5 +1,7 @@
-const assert = require('assert');
+﻿const assert = require('assert');
 const fs = require('fs');
+
+let log = console.log.bind(console);
 
 class Traveling {
   static loadAll() {
@@ -16,6 +18,7 @@ class Traveling {
     this.data = data;
     this.sessions = [];
     for (let url of data.urls) {
+      log(`Reaidng ${url}`);
       let text = fs.readFileSync('data/' + url);
       this.parse(text.toString());
     }
@@ -25,75 +28,107 @@ class Traveling {
   parse(text) {
     let lines = text.split('\n');
     let linenum = 0;
-    let session, board, scores, boards;
     while (linenum < lines.length) {
       let line = lines[linenum++];
       let match = line.match(/^Session (\d+)/);
+      if (!match)
+        match = line.match(/^(\d+)(st|nd) Session\tRank/);
       if (match) {
-        assert(!session);
-        session = { session: parseInt(match[1]) };
-        if (linenum >= 2) {
-          let name = lines[linenum - 2];
-          name = name.replace(/\s*<[^>]*>\s*/g, '');
-          console.log(name);
-          session.name = name;
-        }
-        session.boards = boards = [];
-        continue;
-      }
-      if (!session)
-        continue;
-
-      match = line.match(/^Board:? +\((\d+)\)/);
-      if (match) {
-        if (board)
-          boards.push(board);
-        board = { board: parseInt(match[1]) };
-        board.scores = scores = [];
-        continue;
-      }
-      if (!board)
-        continue;
-
-      //  N-S E-W Contract N-S E-W    MP
-      //   21   2 1NT S 2  120       17.5
-      match = line.match(/^ ([ \d]{3}) ([ \d]{3}) (\d\w{1,2}) +(\w) ?([-\d]+) ([ \d]{4}) ([ \d]{4}) ([ \d\.]{6})/);
-      if (match) {
-        scores.push({
-          ns: parseInt(match[1]),
-          ew: parseInt(match[2]),
-          contract: match[3],
-          by: match[4],
-          make: parseInt(match[5]),
-          nsscore: match[6].trim() ? parseInt(match[6]) : 0,
-          ewscore: match[7].trim() ? parseInt(match[7]) : 0,
-          mp: parseFloat(match[8])
-        });
-        continue;
-      }
-
-      // 20170318-1.html
-      //  N-S E-W Contract N-S E-W     IMP
-      //    9   5 3NT W 4      630       1
-      match = line.match(/^ ([ \d]{3}) ([ \d]{3}) (\d\w{1,2}) +(\w) ?([-\d]+) ([ \d]{4}) ([ \d]{4}) ([ \d\.]{6})/);
-      if (match) {
-        scores.push({
-          ns: parseInt(match[1]),
-          ew: parseInt(match[2]),
-          contract: match[3],
-          by: match[4],
-          make: parseInt(match[5]),
-          nsscore: match[6].trim() ? parseInt(match[6]) : 0,
-          ewscore: match[7].trim() ? parseInt(match[7]) : 0,
-          mp: parseFloat(match[8])
-        });
+        let session = new Session(parseInt(match[1]));
+        this.sessions.push(session);
+        linenum = session.parse(lines, linenum);
         continue;
       }
     }
-    if (board)
-      boards.push(board);
-    if (session)
-      this.sessions.push(session);
+  }
+}
+
+class Session {
+  constructor(session) {
+    log(`Session ${session}`);
+    this.session = session;
+    this.boards = [];
+  }
+
+  parse(lines, linenum) {
+    while (linenum < lines.length) {
+      let line = lines[linenum++];
+      let match = line.match(/^Board:? +\(?(\d+)\)?/);
+      if (match) {
+        let board = new Board(parseInt(match[1]));
+        this.boards.push(board);
+        linenum = board.parse(lines, linenum);
+        continue;
+      }
+
+      // Bd	vs	Contract	by	md	Plus	Mihus	MP
+      // 1	19	4♣	S	4		130	14.50
+      match = line.match(/^(\d+)\t(\d+)?\t(\d[\w♣♦♥♠]{1,2})\t(\w)\t(-?\d+)\t(\d*)\t(\d*)\t([\d\.]+)/);
+      if (match) {
+        let board = new Board(parseInt(match[1]));
+        this.boards.push(board);
+        board.scores.push(new Score(null, match[3], match[4], parseInt(match[5]), [match[6], match[7]], parseFloat(match[8])));
+        continue;
+      }
+
+      if (line.match(/^\d{4}\/\d{2}\/\d{2}/))
+        return linenum - 1;
+    }
+    return linenum;
+  }
+}
+
+class Board {
+  constructor(board) {
+    this.board = board;
+    this.scores = [];
+  }
+
+  parse(lines, linenum) {
+    while (linenum < lines.length) {
+      let line = lines[linenum++];
+      //  N-S E-W Contract N-S E-W    MP
+      //   21   2 1NT S 2  120       17.5
+      let match = line.match(/^ ([ \d]{3}) ([ \d]{3}) (\d\w{1,2}) +(\w) ?([-\d]+) ([ \d]{4}) ([ \d]{4}) ([ \d\.]{6})/);
+      if (match) {
+        this.scores.push(new Score(
+          [parseInt(match[1]), parseInt(match[2])],
+          match[3],
+          match[4],
+          parseInt(match[5]),
+          [match[6], match[7]],
+          parseFloat(match[8])));
+        continue;
+      }
+      if (line[0] === '-')
+        return linenum;
+    }
+    return linenum;
+  }
+}
+
+class Score {
+  constructor(users, contract, by, make, score, mp) {
+    if (users)
+      this.users = users;
+    this.contract = contract;
+    this.by = by;
+    this.make = make;
+    if (score) {
+      if (Array.isArray(score)) {
+        score = score.map(s => s.trim() ? parseInt(s) : null);
+        if (score[0]) {
+          if (!score[1])
+            score = score[0];
+        } else if (score[1]) {
+          score = -score[1];
+        } else {
+          score = 0;
+        }
+      }
+      this.score = score;
+    }
+    this.mp = mp;
   }
 }
 

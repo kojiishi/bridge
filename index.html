@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<body></body>
+<script>
+'use strict';
+
+(function () {
+  fetch('data/combined.json')
+    .then(response => response.json()
+      .then(json => setData(json)));
+})();
+
+let data;
+function setData(json) {
+  data = json;
+}
+</script>

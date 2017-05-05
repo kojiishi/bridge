@@ -25,7 +25,11 @@
   },
   {
     "name": "横浜BC開館記念(Open/△1500/△750STF)",
+    "source": [
+      "http://yokohamabc.or.jp/ResultFolder3000/2017/_17050311/handTravel1A.txt",
+      "http://yokohamabc.or.jp/ResultFolder3000/2017/_17050311/handTravel2A.txt"
+    ],
     "users": { "32": [ 106326, 103242 ] },
-    "urls": [ "20170503-1.html", "20170503-2.html" ]
+    "urls": [ "20170503.txt", "20170503-1.txt", "20170503-2.txt" ]
   }
 ]
